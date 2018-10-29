@@ -4,7 +4,7 @@
   "scripts": {
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
-    "start":"node server.js",
+    "start": "node server.js",
     "heroku-postbuild": "cd client && npm install && npm run build",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
   },
@@ -13,6 +13,7 @@
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "lodash": "^4.17.11",
+    "path": "^0.12.7",
     "request-ip": "^2.1.1"
   },
   "devDependencies": {
