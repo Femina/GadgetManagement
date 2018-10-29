@@ -4,7 +4,7 @@ const app = express();
 const requestIp = require('request-ip');
 
 
-const serverPort = 5000;
+
 
 const routes = {
 	products: {
@@ -21,10 +21,10 @@ app.get(routes.products.get, function (req, res) {
 
 app.use('*', function (req, res) {
     const ip = req.clientIp;
-    res.end(ip);
+    console.log(ip);
     res.redirect(routes.products.get);
 });
 
 
-app.listen(serverPort);
-console.log(`[products] API Server started on ${serverPort}.`);
+app.listen(process.env.PORT || 5000)
+console.log(`[products] API Server started on 5000.`);
