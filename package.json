@@ -1,9 +1,10 @@
 {
-  "name": "gadget_management-portal",
+  "name": "gadget_management_portal",
   "version": "1.0.0",
   "scripts": {
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
+    "start":"node server.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
   },
   "dependencies": {
