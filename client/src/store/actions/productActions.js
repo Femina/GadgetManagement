@@ -4,6 +4,8 @@ import axios from 'axios';
 
       //726527563067e8e17e11ebfd3466192bd6633bb2d630e6bb
 const productsAPI = "https://fonoapi.freshpixl.com/v1/getlatest?token=e2cccae6aece418d74f700249c7168056921c8c67121cb51&limit=20";
+//"https://sheltered-river-73269.herokuapp.com/products.json";
+//"https://fonoapi.freshpixl.com/v1/getlatest?token=e2cccae6aece418d74f700249c7168056921c8c67121cb51&limit=20";
 
 
 const compare = {
